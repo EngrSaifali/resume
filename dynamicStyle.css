@@ -1,0 +1,171 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #F4F5F7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: white;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    background-color: #0073E6;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 10px;
+    margin: 0;
+}
+
+form {
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+}
+
+form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    grid-column: span 2;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #0073E6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 115, 230, 0.5);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button {
+    background-color: #0073e6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    grid-column: span 2;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+#resumeOutput {
+    background-color: #f9f9f9;
+    border-radius: 0 0 10px 10px;
+    padding: 0 20px 5px 20px;
+}
+
+#resumeOutput h2 {
+    text-align: center;
+    color: #0073E6;
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    border-top: 2px solid #0073e6;
+}
+
+#resumeContent h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+  
+#resumeContent p {
+    margin: 5px 0;
+    color: #555;
+}
+  
+#resumeContent hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+  
+#resumeContent ul {
+    padding-left: 20px;
+}
+
+#resumeContent ul li {
+    list-style-type: disc;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        grid-column: span 1;
+    }
+}
+
+#unique {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#downloadResume, #shareResume {
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+#downloadResume {
+    background-color: #0073e6;
+}
+
+#downloadResume:hover {
+    background-color: #005bb5;
+}
+
+#shareResume {
+    background-color: #0073e6;
+}
+
+#shareResume:hover {
+    background-color: #005bb5;
+}
+
+.resumeFooter {
+    text-align: center;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(218, 213, 213);
+    color: rgb(0, 0, 0);
+    padding: 1px;
+}

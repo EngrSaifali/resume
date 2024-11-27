@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dynamicStyle.css" rel="stylesheet" />
+    <title>Dynamic Resume Builder</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dynamic Resume Builder</h1>
+      <form id="resumeForm">
+        <!---- Personal Information ---->
+        <fieldset>
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Saif Ali"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="saifaliapril2004@gmail.com"
+            required
+          />
+
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="0331-1215155"
+            required
+          />
+        </fieldset>
+
+        <!---- Education ---->
+        <fieldset>
+          <label for="education">Degree</label>
+          <input
+            type="text"
+            name="education"
+            id="education"
+            placeholder="e.g., B.E in Industrial Engineering & Management"
+            required
+          />
+
+          <label for="institute">Institute</label>
+          <input
+            type="text"
+            name="institute"
+            id="institute"
+            placeholder="e.g., Dawood University of Engineering & Technology"
+            required
+          />
+
+          <label for="year">Graduation Year</label>
+          <input
+            type="number"
+            name="year"
+            id="name"
+            placeholder="e.g., 2026"
+            required
+          />
+        </fieldset>
+
+        <!---- Work Experience ---->
+        <fieldset>
+          <label for="workExperience">Work Experience</label>
+          <textarea
+            name="workExperience"
+            id="workExperience"
+            placeholder="Describe your work experience"
+            required
+          ></textarea>
+        </fieldset>
+
+        <!---- Skills ---->
+        <fieldset>
+          <label for="skills">Skills (comma-separated)</label>
+          <input
+            type="text"
+            name="skills"
+            id="skills"
+            placeholder="e.g., Javascript, HTML, CSS"
+            required
+          />
+        </fieldset>
+
+        <!---- Submit Button ---->
+        <button type="submit">Generate Resume</button>
+      </form>
+
+      <!---- Resume Output Section ---->
+      <div id="resumeOutput">
+        <div id="resumeContent"></div>
+      </div>
+    </div>
+
+    <div id="unique">
+        <button id="downloadResume">Download Resume</button>
+        <button id="shareResume">Share Resume</button>
+    </div>
+
+    <footer class="resumeFooter">
+        <h4>Dynamic Resume Builder | Saifee Innovations</h4>
+    </footer>
+
+    <script src="./dynamicResume.js"></script>
+  </body>
+</html>
